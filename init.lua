@@ -90,5 +90,17 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    local wk = require("which-key")
+    wk.register({
+      ['<leader><leader>'] = {
+        name = "Hop",
+        l = { "<cmd>HopLineStart<cr>", "Hop Line" },
+        f = { "<cmd>HopChar1AC<cr>", "Hop Char forward" },
+        F = { "<cmd>HopChar1BC<cr>", "Hop Char backward" },
+        w = { "<cmd>HopChar1BC<cr>", "Hop Word forward" },
+        W = { "<cmd>HopChar1AC<cr>", "Hop Word backward" },
+        ['/'] = { "<cmd>HopPattern<cr>", "Hop Pattern" },
+      }
+    })
   end,
 }
