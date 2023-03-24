@@ -19,7 +19,11 @@ return {
   },
   o = {
     guifont = "FiraCode NFM:h10",
-    shell = "nu -i",
+    shell = "nu",
+    shellcmdflag = "-c",
+    shellpipe = "| tee",
+    sellredir = ">",
+    shellxquote = "",
   },
 }
 -- If you need more control, you can use the function()...end notation
