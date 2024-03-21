@@ -58,6 +58,9 @@ return {
             check = {
               command = "clippy",
               extraArgs = { "--", "-W", "clippy::pedantic" }
+            },
+            cargo = {
+              features = "all"
             }
           }
         }
